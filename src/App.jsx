@@ -7,6 +7,10 @@ function App() {
     {
       path: "/",
       element: <Home />
+    },
+    {
+      path: '/الخدمات',
+      element: <h1>Hi</h1>
     }
   ])
   return (

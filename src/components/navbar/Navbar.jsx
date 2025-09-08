@@ -1,41 +1,40 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.scss";
 import Banner from "../banner/Banner";
 export const Navbar = () => {
   const [menu, setMenu] = useState("الرئيسية");
   const [respoMenu, setRespoMenu] = useState(false);
 
-  const locate = useLocation()
+  const locate = useLocation();
   const toggleMenu = () => {
     setRespoMenu((prev) => !prev);
   };
 
-
-  useEffect(()=>{
-    switch(locate.pathname){
-        case '/reval-world/':
-            setMenu("الرئيسية");
-            break;
-        case '/reval-world/الخدمات':
-            setMenu("الخدمات");
-            break;
-        case '/reval-world/المشاريع':
-            setMenu("المشاريع");
-            break;
-        case '/reval-world/من نحن':
-            setMenu("من نحن");
-            break;
-        case '/reval-world/اتصل بنا':
-            setMenu("اتصل بنا");
-            break;
-        default:
-            setMenu("") 
+  useEffect(() => {
+    switch (locate.pathname) {
+      case "/":
+        setMenu("الرئيسية");
+        break;
+      case "/الخدمات":
+        setMenu("الخدمات");
+        break;
+      case "/المشاريع":
+        setMenu("المشاريع");
+        break;
+      case "/من نحن":
+        setMenu("من نحن");
+        break;
+      case "/اتصل بنا":
+        setMenu("اتصل بنا");
+        break;
+      default:
+        setMenu("");
     }
-  })
+  });
   return (
     <>
-    <Banner />
+      <Banner />
       <div className="navbar">
         <div className="txt">
           <h1>
@@ -54,19 +53,21 @@ export const Navbar = () => {
         </div>
 
         <ul className={respoMenu ? "show" : ""}>
-          <li
-            className={menu === "الرئيسية" ? "clicked" : ""}
-            onClick={() => setMenu("الرئيسية")}
-          >
-            {" "}
-            الرئيسية
-          </li>
-          <li
+          <Link to="/" className="a">
+            <li
+              className={menu === "الرئيسية" ? "clicked" : ""}
+              onClick={() => setMenu("الرئيسية")}
+            >
+              {" "}
+              الرئيسية
+            </li>
+          </Link>
+          <Link to='/الخدمات'><li
             className={menu === "الخدمات" ? "clicked" : ""}
             onClick={() => setMenu("الخدمات")}
           >
             الخدمات
-          </li>
+          </li></Link>
           <li
             className={menu === "المشاريع" ? "clicked" : ""}
             onClick={() => setMenu("المشاريع")}
