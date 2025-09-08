@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
+import Services from './pages/Services'
 
 function App() {
   const router = createBrowserRouter([
@@ -10,7 +11,7 @@ function App() {
     },
     {
       path: '/الخدمات',
-      element: <h1>Hi</h1>
+      element: <Services />
     }
   ])
   return (
