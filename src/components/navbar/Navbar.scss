@@ -69,7 +69,8 @@
             flex-direction: row-reverse;
             align-items: center !important;
             width: 100%;
-            justify-content: space-around;
+            justify-content: space-between;
+            padding-inline:clamp(10px, 4vw, 30px);
 
             h1 {
                 span {

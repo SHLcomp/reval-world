@@ -47,6 +47,8 @@
         font-size: 1.2em;
 
         h1 {
+            display: flex;
+            flex-direction: column;
             span {
                 color: var(--main-txt-color) !important;
                 font-weight: 900 !important;
@@ -132,6 +134,7 @@
 
         .txt {
             font-size: larger;
+            text-align: right !important;
             width: 100%;
         }
     }
