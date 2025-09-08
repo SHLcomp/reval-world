@@ -1,0 +1,29 @@
+*{
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  scroll-behavior: smooth;
+  font-family: var(--main-font);
+}
+
+/* root variables */
+:root{
+  --main-color: #e00000;
+  --main-gr: linear-gradient(-45deg, #7f0000, #4e4d4d, #161d31);
+  --navbar-bg: white;
+  --main-txt-color: #bb3c3c;
+  --main-color-2: #4e4d4d;
+  --main-color-3: #161d31;
+  --footer-bg: #131313;
+  --second-color: #f9fafb;
+  --main-font: 'Cairo';
+}
+
+/* shared styles */
+.a{
+  text-decoration: none;
+  color: black;
+}

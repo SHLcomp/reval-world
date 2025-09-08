@@ -1,0 +1,129 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3cm;
+    padding: 0 1rem;
+
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    p {
+        max-width: 800px;
+        text-align: center;
+        color: #555;
+    }
+
+    .main-cont {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        width: 100%;
+        max-width: 1200px;
+
+        .main-item {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+            }
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+
+            //   &:hover .img::after{
+            //         content: "";
+            //         position: absolute;
+            //         width: 100%;
+            //         height: 100%;
+            //         background: #dc7676;
+            //         top: 0;
+            //         left: 0;
+            //         opacity: 0.4;
+            //       }
+            .img {
+                width: 100%;
+                height: 180px;
+                overflow: hidden;
+                position: relative;
+
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transition: .5s;
+                    object-fit: cover;
+                    position: relative;
+                }
+            }
+
+            .txt {
+                padding: 1.2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+                text-align: right !important;
+                align-items: end;
+
+                i {
+                    font-size: 1.5rem;
+                    padding: 0.6rem;
+                    border-radius: 8px;
+                    color: #fff;
+                    background: black;
+                    width: fit-content;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                    margin: 0;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 0.95rem;
+                    color: #666;
+                }
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    padding-left: 1.2rem; // remove browser padding
+                    list-style-type: none !important; // remove browser marker completely
+                    // direction: rtl;
+                    align-self: start;
+                    text-align: left;
+
+                    li {
+                        font-size: 0.9rem;
+                        line-height: 1.5;
+                        position: relative;
+                        margin-bottom: 0.4rem;
+                        padding-left: 1rem;
+
+                        &::before {
+                            content: "#";
+                            color: red;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
