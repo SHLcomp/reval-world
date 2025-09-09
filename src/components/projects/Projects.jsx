@@ -14,7 +14,7 @@ export const Projects = () => {
           return (
             <div
               className="project"
-              data-text={`"${item.title}"`}
+              data-text={item.title}
               style={{
                 "--text": `${item.title}`,
               }}

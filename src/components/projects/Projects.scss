@@ -26,6 +26,22 @@
             justify-content: space-around;
             border-radius: 20px;
             overflow: hidden;
+            position: relative;
+
+            &::before {
+                content: attr(data-text);
+                position: absolute;
+                display: inline-block;
+                white-space: nowrap;
+                top: 10px;
+                right: 5px;
+                font-size: small;
+                background: red;
+                padding: 5px 10px;
+                color: white;
+                border-radius: 20px;
+                z-index: 900;
+            }
 
             &:hover img {
                 transform: scale(1.1);
@@ -120,20 +136,7 @@
             .project {
                 width: 100%;
                 height: auto; // let height adjust naturally
-                position: relative;
 
-                &::before {
-                    content: attr(data-text);
-                    position: absolute;
-                    display: inline-block;
-                    white-space: nowrap;
-                    top: 0;
-                    left: 0;
-                    background: red;
-                    padding: 5px 10px;
-                    color: white;
-                    z-index: 900;
-                }
 
                 .txt {
                     padding: 0;
