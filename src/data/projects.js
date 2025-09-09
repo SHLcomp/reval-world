@@ -8,7 +8,7 @@ const projects = [
     date: "2024"
   },
   {
-    img: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    img: "https://images.pexels.com/photos/1117452/pexels-photo-1117452.jpeg?auto=compress&cs=tinysrgb&w=1200",
     title: "الجسور و الممرات",
     fullTitle: "جسر فولاذي تجاري",
     des: "جسر للمشاة يربط المناطق التجارية بإنشاءات فولاذية حديثة.",
@@ -16,7 +16,7 @@ const projects = [
     date: "2023"
   },
   {
-    img: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    img: "https://images.pexels.com/photos/1216544/pexels-photo-1216544.jpeg?auto=compress&cs=tinysrgb&w=1200",
     title: "الهياكل الفولاذية",
     fullTitle: "منشأة التصنيع",
     des: "منشأة تصنيع كاملة مع إطار فولاذي مخصص وألواح معزولة.",
@@ -32,7 +32,7 @@ const projects = [
     date: "2022"
   },
   {
-    img: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    img: "https://images.pexels.com/photos/1216544/pexels-photo-1216544.jpeg?auto=compress&cs=tinysrgb&w=1200",
     title: "الحظائر و المستودعات",
     fullTitle: "مشروع حظيرة المطار",
     des: "حظيرة طائرات مع إنشاءات فولاذية متخصصة وأنظمة أسقف واسعة المدى.",
@@ -40,7 +40,7 @@ const projects = [
     date: "2022"
   },
   {
-    img: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    img: "https://images.pexels.com/photos/1117452/pexels-photo-1117452.jpeg?auto=compress&cs=tinysrgb&w=1200",
     title: "الجسور و الممرات",
     fullTitle: "نظام الممرات المرتفعة",
     des: "نظام ممرات متصلة للمجمع الصناعي مع درابزين أمان وحماية من الطقس.",
