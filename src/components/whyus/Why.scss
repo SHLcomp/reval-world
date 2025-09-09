@@ -1,0 +1,165 @@
+.why {
+    display: flex !important;
+    flex-direction: row-reverse;
+    padding-top: 2cm;
+    margin-top: 1cm;
+    background: var(--second-color);
+
+    .right {
+        width: 50%;
+        padding: 10px;
+
+        .txt {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            gap: 10px;
+
+            .info {
+                display: flex;
+                justify-content: space-around;
+                gap: 10px;
+
+                .info-item {
+                    background: white;
+                    box-shadow: 3px 4px 6px 3px rgba(0, 0, 0, 0.1);
+                    padding-inline: 10px;
+                    width: clamp(60px, 30vw, 600px);
+                    height: clamp(20px, 10vw, 200px);
+                    h4{
+                        color: var(--main-txt-color);
+                    }
+                }
+
+            }
+        }
+
+        .why-us {
+            margin-top: 2rem;
+
+            ul {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); // 2 equal columns
+                gap: 10px 30px; // row-gap and column-gap
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    font-size: 1rem;
+
+                    &::before {
+                        content: "✔"; // checkmark
+                        color: #0fb36a; // green like in your screenshot
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .left {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .img-cont {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            position: relative;
+
+            // Floating badge
+            &::after {
+                content: "15+ سنة من الخبرة";
+                position: absolute;
+                bottom: 10%;
+                right: -20px;
+                background: #fff;
+                color: #e63946;
+                font-size: 1.2rem;
+                font-weight: 700;
+                padding: 10px 20px;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                white-space: nowrap;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 280px;
+                border-radius: 16px;
+                object-fit: cover;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+                &.move-up {
+                    transform: translateY(-25px);
+                }
+
+                &.move-down {
+                    transform: translateY(25px);
+                }
+            }
+        }
+    }
+
+
+
+
+
+}
+
+
+
+@media (max-width:600px) {
+    .why {
+        flex-direction: column;
+        gap: 5rem;
+
+        .right {
+            width: 100%;
+            gap: 4cm;
+            padding-inline: 20px;
+            .txt{
+                gap: 2rem;
+                .info{
+                    flex-direction: column;
+                    .info-item{
+                        width: 100%;
+                        height: clamp(160px, 10vh, 30vh);
+                        padding-block: 10px;
+                    }
+                }
+            }
+
+        }
+
+        .left {
+            width: 100%;
+            margin-top: 1.5rem;
+            padding-inline: 10px;
+
+            .img-cont {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+
+                &::after {
+                    font-size: 1rem;
+                    bottom: 5%;
+                    right: 50%;
+                    transform: translateX(50%);
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
