@@ -7,6 +7,7 @@ import Gallery from '../components/gallery/Gallery';
 import Projects from '../components/projects/Projects';
 import Stats from '../components/stats/Stats';
 import ContactForm from '../components/contactForm/ContactForm';
+import ContactInfo from '../components/contactInfo/ContactInfo';
 
 export const Home = () => {
   return (
@@ -19,6 +20,7 @@ export const Home = () => {
         <Projects />
         <Stats />
         <ContactForm />
+        <ContactInfo />
     </div>
   )
 }
