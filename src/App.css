@@ -13,6 +13,7 @@ body{
 :root{
   --main-color: #e00000;
   --main-gr: linear-gradient(-45deg, #7f0000, #4e4d4d, #161d31);
+  --second-gr: linear-gradient(-45deg, #4e4d4d, #161d31);
   --navbar-bg: white;
   --main-txt-color: #bb3c3c;
   --main-color-2: #4e4d4d;

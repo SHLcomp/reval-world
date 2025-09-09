@@ -1,5 +1,6 @@
 import './Main.scss';
 import data from '../../data/main';
+import Ready from '../ready/Ready';
 
 export const Main = () => {
   return (
@@ -26,6 +27,7 @@ export const Main = () => {
                 )
             })}
         </div>
+        <Ready />
     </div>
   )
 }
