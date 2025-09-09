@@ -62,12 +62,15 @@ export const Navbar = () => {
               الرئيسية
             </li>
           </Link>
-          <Link className="a" to='/الخدمات'><li
-            className={menu === "الخدمات" ? "clicked" : ""}
-            onClick={() => setMenu("الخدمات")}
-          >
-            الخدمات
-          </li></Link>
+          <Link className="a" to="/الخدمات">
+            <li
+              className={menu === "الخدمات" ? "clicked" : ""}
+              onClick={() => setMenu("الخدمات")}
+            >
+              {" "}
+              الخدمات
+            </li>
+          </Link>
           <li
             className={menu === "المشاريع" ? "clicked" : ""}
             onClick={() => setMenu("المشاريع")}

@@ -5,6 +5,8 @@ import Main from '../components/main/Main';
 import Why from '../components/whyus/Why';
 import Gallery from '../components/gallery/Gallery';
 import Projects from '../components/projects/Projects';
+import Stats from '../components/stats/Stats';
+import ContactForm from '../components/contactForm/ContactForm';
 
 export const Home = () => {
   return (
@@ -15,6 +17,8 @@ export const Home = () => {
         <Why />
         <Gallery/>
         <Projects />
+        <Stats />
+        <ContactForm />
     </div>
   )
 }

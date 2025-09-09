@@ -5,7 +5,7 @@
     justify-content: center;
     width: 100%;
     background: var(--second-color);
-    padding-top: 2cm;
+    padding-block: 2cm;
     gap: 20px;
     direction: rtl;
 
@@ -36,7 +36,7 @@
                 top: 10px;
                 right: 5px;
                 font-size: small;
-                background: red;
+                background: var(--main-color);
                 padding: 5px 10px;
                 color: white;
                 border-radius: 20px;
