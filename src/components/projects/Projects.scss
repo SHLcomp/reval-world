@@ -1,0 +1,137 @@
+.projects {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center;
+    width: 100%;
+    background: var(--second-color);
+    padding-top: 2cm;
+    gap: 20px;
+    direction: rtl;
+
+    .projects-cont {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // default 3 columns for large screens
+        gap: 20px;
+        padding-inline: 30px;
+        justify-items: center;
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            width: clamp(90px, 25vw, 500px);
+            height: clamp(90px, 20vw, 500px);
+            box-shadow: 3px 4px 6px 3px rgba(0, 0, 0, 0.1);
+            transition: 0.5s;
+            justify-content: space-around;
+            border-radius: 20px;
+            overflow: hidden;
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+
+            &:hover .img {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #f4949434;
+                    pointer-events: none;
+                }
+            }
+
+            &:hover .txt h3 {
+                color: var(--main-txt-color) !important;
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+
+            .img {
+                position: relative; // needed for pseudo-element
+                width: 100%;
+                height: 50% !important;
+                overflow: hidden !important;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: 0.5s;
+                }
+            }
+
+            .txt {
+                display: flex;
+                flex-direction: column;
+                text-align: right;
+                gap: 10px;
+                padding-inline: 20px;
+                padding-block: 10px;
+                direction: rtl;
+
+                .info {
+                    display: flex;
+                    justify-content: space-between !important;
+                    padding-inline: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+// Medium screens (tablet)
+@media (max-width: 1024px) {
+    .projects {
+        text-align: center;
+        padding-inline: 30px;
+
+        .projects-cont {
+            grid-template-columns: repeat(2, 1fr); // 2 columns
+            padding-inline: 20px;
+
+            .project {
+                width: clamp(120px, 40vw, 450px);
+                height: clamp(120px, 40vw, 450px);
+            }
+        }
+    }
+}
+
+// Small screens (mobile)
+@media (max-width: 600px) {
+
+    .projects {
+        text-align: center;
+        padding-inline: 10px;
+
+        .projects-cont {
+            grid-template-columns: 1fr; // 1 column
+            padding-inline: 10px;
+
+            .project {
+                width: 100%;
+                height: auto; // let height adjust naturally
+
+                .txt {
+                    padding: 0;
+                    padding-inline: 10px;
+
+                    .info {
+                        padding: 0px;
+                        padding-inline: 5px;
+                        font-size: small;
+                    }
+                }
+            }
+        }
+    }
+}

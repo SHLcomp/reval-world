@@ -4,6 +4,7 @@ import Hero from '../components/hero/Hero';
 import Main from '../components/main/Main';
 import Why from '../components/whyus/Why';
 import Gallery from '../components/gallery/Gallery';
+import Projects from '../components/projects/Projects';
 
 export const Home = () => {
   return (
@@ -13,6 +14,7 @@ export const Home = () => {
         <Main />
         <Why />
         <Gallery/>
+        <Projects />
     </div>
   )
 }
