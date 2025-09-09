@@ -1,7 +1,7 @@
 .why {
     display: flex !important;
     flex-direction: row-reverse;
-    padding-top: 2cm;
+    padding-block: 2cm;
     margin-top: 1cm;
     background: var(--second-color);
 
@@ -26,7 +26,8 @@
                     padding-inline: 10px;
                     width: clamp(60px, 30vw, 600px);
                     height: clamp(20px, 10vw, 200px);
-                    h4{
+
+                    h4 {
                         color: var(--main-txt-color);
                     }
                 }
@@ -126,11 +127,14 @@
             width: 100%;
             gap: 4cm;
             padding-inline: 20px;
-            .txt{
+
+            .txt {
                 gap: 2rem;
-                .info{
+
+                .info {
                     flex-direction: column;
-                    .info-item{
+
+                    .info-item {
                         width: 100%;
                         height: clamp(160px, 10vh, 30vh);
                         padding-block: 10px;
@@ -148,6 +152,63 @@
             .img-cont {
                 grid-template-columns: 1fr 1fr;
                 gap: 12px;
+
+                &::after {
+                    font-size: 1rem;
+                    bottom: 5%;
+                    right: 50%;
+                    transform: translateX(50%);
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 601px) {
+    .why {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 2rem;
+
+        .right {
+            width: 100%;
+            text-align: center;
+
+            .txt {
+                text-align: center;
+                gap: 30px;
+
+                .info {
+                    justify-content: center;
+
+                    .info-item {
+                        flex: 1 1 100%;
+                        height: clamp(150px, 20vw, 200px);
+
+                    }
+                }
+            }
+
+            .why-us {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+
+        .left {
+            width: 100%;
+            margin-top: 2rem;
+            .img-cont {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
 
                 &::after {
                     font-size: 1rem;
