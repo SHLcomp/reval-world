@@ -24,6 +24,7 @@ export const Home = () => {
         <ContactForm />
         <ContactInfo />
         <Location />
+        <Footer />
     </div>
   )
 }
