@@ -16,16 +16,16 @@ export const Navbar = () => {
       case "/":
         setMenu("الرئيسية");
         break;
-      case "/الخدمات":
+      case "/services":
         setMenu("الخدمات");
         break;
-      case "/المشاريع":
+      case "/projects":
         setMenu("المشاريع");
         break;
-      case "/من نحن":
+      case "/about":
         setMenu("من نحن");
         break;
-      case "/اتصل بنا":
+      case "/contact":
         setMenu("اتصل بنا");
         break;
       default:
@@ -62,7 +62,7 @@ export const Navbar = () => {
               الرئيسية
             </li>
           </Link>
-          <Link className="a" to="/الخدمات">
+          <Link className="a" to="/services">
             <li
               className={menu === "الخدمات" ? "clicked" : ""}
               onClick={() => setMenu("الخدمات")}
@@ -83,12 +83,12 @@ export const Navbar = () => {
           >
             من نحن
           </li>
-          <li
+          <a className="a" href="#contact"><li
             className={menu === "اتصل بنا" ? "clicked" : ""}
             onClick={() => setMenu("اتصل بنا")}
           >
             اتصل بنا
-          </li>
+          </li></a>
         </ul>
       </div>
     </>

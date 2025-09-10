@@ -3,7 +3,7 @@ import data from "../../data/contactInfo";
 
 export const ContactInfo = () => {
   return (
-    <div className="contactInfo">
+    <div className="contactInfo" id="contact">
         <h2>معلومات التواصل</h2>
       <div className="contact-cont">
         {data.map((item) => {
@@ -20,6 +20,8 @@ export const ContactInfo = () => {
           );
         })}
       </div>
+              <h4 className="cta"> <i className="fa-brands fa-whatsapp fa-xl"></i>تواصل عن طريق الواتس</h4>
+
     </div>
   );
 };

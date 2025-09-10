@@ -23,12 +23,34 @@
 
 
 .brand {
-    .logo {
-        width: 140px;
-        height: auto;
-        margin-bottom: 12px;
-    }
+    // .logo {
+    //     width: 140px;
+    //     height: auto;
+    //     margin-bottom: 12px;
+    // }
+    
+        h1 {
+            padding-bottom: 20px;
+            span {
+                &:nth-child(1) {
+                    color: var(--main-color);
+                    direction: rtl;
+                }
 
+                &:nth-child(2) {
+                    color: white;
+                    direction: rtl;
+                }
+
+                &:nth-child(3) {
+                    font-size: small;
+                    font-weight: 200;
+                    direction: rtl;
+                    // margin-left: -20px !important;
+                }
+            }
+
+        }
     .about {
         color: rgba(255, 255, 255, 0.85);
         max-width: 380px;

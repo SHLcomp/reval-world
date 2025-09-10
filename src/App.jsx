@@ -10,7 +10,7 @@ function App() {
       element: <Home />
     },
     {
-      path: '/الخدمات',
+      path: '/services',
       element: <Services />
     }
   ])

@@ -6,7 +6,24 @@
     gap: 20px;
     background: var(--second-color);
     padding-block: 20px;
-
+    padding-bottom: 2cm;
+    .cta{
+            background: green;
+            color: white;
+            padding-inline: 20px;
+            padding-block: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            transition: .3s;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 3px 4px 6px 3px rgba(0, 0, 0, 0.1);
+            }
+        }
     .contact-cont {
         display: flex;
         gap: 20px;
