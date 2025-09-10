@@ -1,16 +1,16 @@
-*{
+* {
   padding: 0%;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   scroll-behavior: smooth;
   font-family: var(--main-font);
 }
 
 /* root variables */
-:root{
+:root {
   --main-color: #e00000;
   --main-gr: linear-gradient(-45deg, #7f0000, #4e4d4d, #161d31);
   --second-gr: linear-gradient(-45deg, #4e4d4d, #161d31);
@@ -20,11 +20,16 @@ body{
   --main-color-3: #161d31;
   --footer-bg: #131313;
   --second-color: #f9fafb;
-  --main-font: 'Cairo';
+  --main-font: "Cairo";
+
+  --primary: #0b3b57; /* deep blue */
+  --muted: #6b7280;
+  --accent: #f59e0b; /* amber */
+  --bg: #f8fafc;
 }
 
 /* shared styles */
-.a{
+.a {
   text-decoration: none;
   color: black;
 }
