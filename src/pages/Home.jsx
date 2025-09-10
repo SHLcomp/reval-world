@@ -8,7 +8,7 @@ import Projects from '../components/projects/Projects';
 import Stats from '../components/stats/Stats';
 import ContactForm from '../components/contactForm/ContactForm';
 import ContactInfo from '../components/contactInfo/ContactInfo';
-// import Footer from '../components/footer/Footer';
+import Footer from '../components/footer/Footer';
 import Location from '../components/location/Location';
 
 export const Home = () => {
@@ -24,6 +24,7 @@ export const Home = () => {
         <ContactForm />
         <ContactInfo />
         <Location />
+        <Footer />
     </div>
   )
 }
