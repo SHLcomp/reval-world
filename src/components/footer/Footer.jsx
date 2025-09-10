@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.scss';
+// import logo from '../../assets/'
 
 
 export default function Footer() {
@@ -8,7 +9,7 @@ return (
 <div className="container">
 <div className="footer-top">
 <div className="brand">
-<img src="/logo-footer.svg" alt="Reval" className="logo" />
+{/* <img src="" alt="Reval" className="logo" /> */}
 <p className="about">ريفال وورلد للمقاولات - إنشاءات فولاذية متخصصة، نعمل على تقديم حلول هندسية متكاملة ومقاولات عالية الجودة.</p>
 <div className="socials">
 <a href="#" aria-label="facebook" className="icon" dangerouslySetInnerHTML={{__html: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.06 5.66 21.13 10.44 21.9v-7.02H7.9v-2.81h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.77-1.61 1.56v1.88h2.74l-.44 2.81h-2.3V21.9C18.34 21.13 22 17.06 22 12.07z"/></svg>`}} />
