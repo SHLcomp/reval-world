@@ -15,7 +15,7 @@
         display: flex;
         justify-content: center;
         height: 50vh !important;
-            border-radius: 20px;
+        border-radius: 20px;
         align-items: center;
 
         .location-info {
@@ -30,16 +30,52 @@
             padding-inline: 20px;
             height: fit-content;
             width: fit-content;
+            text-align: center;
         }
     }
 }
 
+/* Mobile screens */
 @media (max-width:600px) {
-    .location{
-        text-align: center;
+    .location {
         padding-inline: 5px;
-        .location-cont{
+        text-align: center;
+        h1 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        .location-cont {
+            width: 95%;
             height: 30vh !important;
+        }
+    }
+}
+
+/* Medium screens */
+@media (min-width:601px) and (max-width:1284px) {
+    .location {
+        padding-block: 2cm;
+        text-align: center;
+        gap: 15px;
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.1rem;
+            width: 80%;
+            text-align: center;
+        }
+        .location-cont {
+            width: 90%;
+            height: 40vh !important;
+
+            .location-info {
+                padding-block: 15px;
+                padding-inline: 15px;
+                gap: 8px;
+            }
         }
     }
 }
