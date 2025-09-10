@@ -10,6 +10,11 @@
     font-weight: 800;
     border-radius: 20px;
     padding-block: 30px;
+    
+    // animation
+//   &.zoomItems {
+//     animation: zoomItems 0.8s ease-out forwards; /* longer duration for smooth zoom */
+//   }
     .txt{
         display: flex;
         flex-direction: column;

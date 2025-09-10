@@ -6,7 +6,7 @@
     gap: 2rem;
     margin-top: 3cm;
     padding: 0 1rem;
-    
+
     h1 {
         font-size: 2rem;
         font-weight: bold;
@@ -26,6 +26,7 @@
         width: 100%;
         max-width: 1200px;
 
+
         .main-item {
             display: flex;
             flex-direction: column;
@@ -34,6 +35,13 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            // animation
+            transform: translateY(--popItems-move) scale(var(--popItems-scale));
+            opacity: 0.1;
+            &.pop {
+                animation: popItems 2s forwards;
+            }
 
             &:hover {
                 transform: translateY(-5px);

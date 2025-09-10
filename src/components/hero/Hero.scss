@@ -10,7 +10,9 @@
     background-size: cover;
     position: relative;
     font-family: var(--main-font);
-    
+
+    animation: zoomBackground 20s ease-in-out infinite alternate;
+
     /* parent for the pseudo-element */
 
     &::before {
@@ -50,6 +52,7 @@
         h1 {
             display: flex;
             flex-direction: column;
+
             span {
                 color: var(--main-txt-color) !important;
                 font-weight: 900 !important;
@@ -69,7 +72,7 @@
                 span {
                     font-weight: 800;
                     color: var(--main-txt-color);
-                    font-size:1.5em;
+                    font-size: 1.5em;
                 }
             }
         }
@@ -144,31 +147,31 @@
 
 /* Tablets / medium screens */
 @media (max-width: 1024px) {
-  .hero {
-    flex-direction: column-reverse; // stack text + image vertically
-    height: auto;
-    padding: 2rem 1rem;
+    .hero {
+        flex-direction: column-reverse; // stack text + image vertically
+        height: auto;
+        padding: 2rem 1rem;
 
-    .txt {
-      width: 100%;
-      text-align: center;
-      font-size: 1.1rem;
+        .txt {
+            width: 100%;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .img {
+            padding: 1rem 0;
+
+            img {
+                width: 90%; // shrink image a bit for tablets
+                max-width: 600px;
+                border-radius: 20px;
+            }
+        }
+
+        .ctas {
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap; // buttons wrap if needed
+        }
     }
-
-    .img {
-      padding: 1rem 0;
-
-      img {
-        width: 90%;   // shrink image a bit for tablets
-        max-width: 600px;
-        border-radius: 20px;
-      }
-    }
-
-    .ctas {
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap; // buttons wrap if needed
-    }
-  }
 }

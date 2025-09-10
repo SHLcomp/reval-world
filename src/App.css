@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  
 }
 
 body {
@@ -28,10 +27,51 @@ body {
   --muted: #6b7280;
   --accent: #f59e0b; /* amber */
   --bg: #f8fafc;
+
+
+  --popItems-scale: 0.9;
+  --zoomItems-scale: 0.1;
+  --popItems-move: 20px;
 }
 
 /* shared styles */
 .a {
   text-decoration: none;
   color: black;
+}
+
+/* animations */
+
+/* Keyframes for zoom effect */
+@keyframes zoomBackground {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 120% 120%;
+  }
+}
+
+/* pop items */
+@keyframes popItems {
+  0% {
+    transform: translateY(var(--popItems-move)) scale(var(--popItems-scale));
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* zoom items */
+@keyframes zoomItems {
+  0% {
+    transform: scale(var(--zoomItems-scale));
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
