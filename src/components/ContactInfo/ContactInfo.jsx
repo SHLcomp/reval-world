@@ -23,7 +23,8 @@ export const ContactInfo = () => {
         })}
       </div>
       <a
-        href="https://wa.me/+966583319303?text=Hello%20there!"
+        // href="https://wa.me/+966583319303?text=Hello%20there!"
+        href="https://wa.me/+966123456789?text=Hello%20there!"
         target="_blank"
         rel="noopener noreferrer"
         className="a"
