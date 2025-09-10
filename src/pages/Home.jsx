@@ -7,7 +7,7 @@ import Gallery from '../components/gallery/Gallery';
 import Projects from '../components/projects/Projects';
 import Stats from '../components/stats/Stats';
 import ContactForm from '../components/contactForm/ContactForm';
-import ContactInfo from '../components/contactInfo/ContactInfo';
+import ContactInfo from '../components/ContactInfo/ContactInfo';
 import Footer from '../components/footer/Footer';
 import Location from '../components/location/Location';
 
