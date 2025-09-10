@@ -95,6 +95,13 @@
                     display: flex;
                     justify-content: space-between !important;
                     padding-inline: 5px;
+                    p{
+                        display: flex;
+                        gap: 1px;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: small;
+                    }
                 }
             }
         }

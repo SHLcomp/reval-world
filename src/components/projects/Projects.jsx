@@ -26,8 +26,8 @@ export const Projects = () => {
                 <h3>{item.fullTitle}</h3>
                 <h5>{item.des}</h5>
                 <div className="info">
-                  <p>{item.date}</p>
-                  <p>{item.location}</p>
+                  <p><i className="fa-solid fa-calendar fa-xs"></i>{item.date}</p>
+                  <p>{item.location}<i className="fa-solid fa-location-dot fa-xs"></i></p>
                 </div>
               </div>
             </div>
