@@ -43,14 +43,16 @@ return (
 <li><a href="#">اتصل بنا</a></li>
 </ul>
 </div>
-<div className="col newsletter">
+
+{/* <div className="col newsletter">
 <h4>اشترك في النشرة الإخبارية</h4>
 <p>احصل على آخر التحديثات والعروض.</p>
 <form className="newsletter-form" onSubmit={(e)=>e.preventDefault()}>
 <input type="email" placeholder="بريدك الإلكتروني" aria-label="email" />
 <button type="submit">اشترك</button>
 </form>
-</div>
+</div> */}
+
 </div>
 </div>
 

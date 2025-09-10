@@ -1,0 +1,45 @@
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding-block: 3cm;
+
+    .location-cont {
+        width: 80%;
+        background-image: url(https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=600);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        height: 50vh !important;
+            border-radius: 20px;
+        align-items: center;
+
+        .location-info {
+            background: var(--second-color);
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding-block: 20px;
+            padding-inline: 20px;
+            height: fit-content;
+            width: fit-content;
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .location{
+        text-align: center;
+        padding-inline: 5px;
+        .location-cont{
+            height: 30vh !important;
+        }
+    }
+}
